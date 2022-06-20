@@ -1,6 +1,3 @@
 <section class="nftList">
-  <app-nft-card [nft]="nftList[0]"></app-nft-card>
-  <app-nft-card [nft]="nftList[0]"></app-nft-card>
-  <app-nft-card [nft]="nftList[0]"></app-nft-card>
-  <app-nft-card [nft]="nftList[0]"></app-nft-card>
+  <app-nft-card *ngFor="let nft of nftList" [nft]="nft"></app-nft-card>
 </section>

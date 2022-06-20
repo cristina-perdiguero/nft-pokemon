@@ -12,5 +12,4 @@ export class NftCardComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

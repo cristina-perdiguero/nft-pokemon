@@ -28,8 +28,9 @@
     }
   }
   .nftCard__image{
-    width: 20rem;
+    width: 10rem;
     position: absolute;
+    bottom: -2rem;
   }
   .nftCard__description{
     background-color: variables.$whiteColor;
