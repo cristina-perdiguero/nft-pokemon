@@ -4,9 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
+import { NftLayoutComponent } from './layout/nft-layout/nft-layout.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NftLayoutComponent
   ],
   imports: [
     SharedModule,
