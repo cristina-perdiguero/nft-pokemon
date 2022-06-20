@@ -5,6 +5,8 @@
   background-color: variables.$grassColor;
   padding: variables.$cardPadding;
   border-radius: variables.$borderRadius;
+  height: calc( 100% - 1rem );
+  @include mixins.flex( column, auto, auto );
   .nftCard__header{
     position: relative;
     min-height: 10rem;
@@ -36,6 +38,7 @@
     background-color: variables.$whiteColor;
     border-radius: variables.$borderRadius;
     padding: variables.$cardPadding;
+    flex: 1;
   }
   .nftCard__type{
     @include mixins.flex( row, center, center);
@@ -59,6 +62,7 @@
   .nftCard__features{
     @include mixins.grid( 3, 1, 0.5rem );
     >div{
+      text-transform: capitalize;
       @include mixins.grid( 1, 2, 0.5rem );
       text-align: center;
       font-size: variables.$smallFont;
@@ -78,12 +82,13 @@
   .nftCard__baseStats{
     margin: 0.5rem 0;
     display: grid;
-    grid-template-columns: 2rem 1fr;
+    grid-template-columns: 35% 1fr;
     font-size: variables.$smallFont;
     gap: 0.5rem;
     ul{
       @include mixins.grid( 1, 5, 1fr );
       align-items: center;
+      text-transform: capitalize;
       &:first-child{
         border-right: 2px solid variables.$lightGrayColor;
       }

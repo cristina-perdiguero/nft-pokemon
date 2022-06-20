@@ -8,29 +8,29 @@
   </div>
   <div class="nftCard__description">
     <div class="nftCard__type">
-        <p>Grass</p>
-        <p>Poison</p>
+      <p *ngFor="let type of nft.type">{{type.type.name}}</p>
     </div>
     <h2 class="nftCard__title">About</h2>
     <div class="nftCard__features">
       <div>
         <div>
           <img src="assets/images/weight.svg" alt="weight">
-          <p>6.9kg</p>
+          <p>{{nft.weight | number : '.2' }}kg</p>
         </div>
         <p>Weight</p>
       </div>
       <div>
         <div>
           <img src="assets/images/height.svg" alt="height">
-          <p>6.9kg</p>
+          <p>{{nft.height| number : '.2' }}m</p>
         </div>
         <p>Weight</p>
       </div>
       <div>
         <ul>
-          <li>Chlorophyll</li>
-          <li>Overgrow</li>
+          <li *ngFor="let move of nft.moves">
+            {{move.move.name}}
+          </li>
         </ul>
         <p>Moves</p>
       </div>
@@ -38,40 +38,14 @@
     <h2 class="nftCard__title">Base Stats</h2>
     <div class="nftCard__baseStats">
       <ul>
-        <li>HP</li>
-        <li>HP</li>
-        <li>HP</li>
-        <li>HP</li>
-        <li>HP</li>
+        <li *ngFor="let stat of nft.stats">
+          {{stat.stat.name}}
+        </li>
       </ul>
       <ul class="nftCard__bars">
-        <li>
-          <p>049</p>
-          <div>
-            <div></div>
-          </div>
-        </li>
-        <li>
-          <p>049</p>
-          <div>
-            <div></div>
-          </div>
-        </li>
-        <li>
-          <p>049</p>
-          <div>
-            <div></div>
-          </div>
-        </li>
-        <li>
-          <p>049</p>
-          <div>
-            <div></div>
-          </div>
-        </li>
-        <li>
-          <p>049</p>
-          <div>
+        <li *ngFor="let stat of nft.stats">
+          <p>{{stat.base_stat | number: '3.0'}}</p>
+          <div data-base="stat.base_stat">
             <div></div>
           </div>
         </li>

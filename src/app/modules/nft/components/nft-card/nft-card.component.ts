@@ -8,7 +8,8 @@ export class NftCardComponent implements OnInit {
 
   @Input() nft : any;
 
-  constructor() { }
+  constructor(
+  ) { }
 
   ngOnInit(): void {
   }

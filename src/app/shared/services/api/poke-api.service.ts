@@ -41,7 +41,6 @@ export class PokeApiService {
   public getNftList(){
     this.list.forEach( (pokemon : string)=>{
       let url = `${this.BASE_URL}${this.pokemonListUrl}/${pokemon}`
-      console.log(pokemon)
         this.pokemon( url ).subscribe(
           pokemonData=> {
             this.getNewNft(
@@ -49,11 +48,11 @@ export class PokeApiService {
                 image  : pokemonData.sprites.front_default,
                 name   : pokemonData.name,
                 number : pokemonData.order,
-                height : pokemonData.height,
-                weight : pokemonData.weight,
+                height : pokemonData.height * 0.1,
+                weight : pokemonData.weight * 0.01,
                 type   : pokemonData.types,
                 stats  : pokemonData.stats,
-                moves  : pokemonData.moves
+                moves  : pokemonData.moves.slice(0, 2)
               }
             )
           }
