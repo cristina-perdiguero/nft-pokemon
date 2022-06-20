@@ -1,0 +1,64 @@
+@use './variables';
+
+@mixin paddingResponsive(){
+  padding: 1.5rem;
+  @include medium(){
+    padding: 3rem;
+  }
+  @include xl(){
+    padding: 4.5rem;
+  }
+  @include xxl(){
+    padding: 6rem;
+  }
+}
+
+@mixin flex( $column, $justify, $align ){
+  display: flex;
+  flex-direction : $column;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin grid( $columns, $rows, $gap ){
+  display : grid;
+  grid-template-columns: repeat( $columns, 1fr );
+  grid-template-rows: repeat( $rows, 1fr);
+  gap: $gap;
+}
+
+@mixin xs(){
+ @media( max-width: variables.$small ) {
+  @content;
+ }
+}
+
+@mixin small(){
+  @media( min-width: variables.$small ) {
+   @content;
+  }
+ }
+
+@mixin medium(){
+  @media( min-width: variables.$medium ){
+    @content;
+  }
+}
+
+@mixin large(){
+  @media( min-width: variables.$large){
+    @content;
+  }
+}
+
+@mixin xl(){
+  @media( min-width: variables.$xl ){
+    @content;
+  }
+}
+
+@mixin xxl(){
+  @media( min-width: variables.$xxl ){
+    @content;
+  }
+}

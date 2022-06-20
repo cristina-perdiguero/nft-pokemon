@@ -1,0 +1,12 @@
+@use '../../../../../assets/sass/abstract/mixins';
+.nftList{
+  @include mixins.small(){
+    @include mixins.grid( 2, 1, 1rem );
+  }
+  @include mixins.large(){
+    @include mixins.grid( 3, 1, 1rem );
+  }
+  @include mixins.xl(){
+    @include mixins.grid( 4, 1, 1rem );
+  }
+}

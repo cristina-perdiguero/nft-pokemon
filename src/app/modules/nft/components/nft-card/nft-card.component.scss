@@ -1,0 +1,110 @@
+@use '../../../../../assets/sass/abstract/variables';
+@use '../../../../../assets/sass/abstract/mixins';
+
+.nftCard{
+  background-color: variables.$grassColor;
+  padding: variables.$cardPadding;
+  border-radius: variables.$borderRadius;
+  .nftCard__header{
+    position: relative;
+    min-height: 10rem;
+    color: variables.$whiteColor;
+    background-image: url('../../../../../assets/images/pokeball.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    @include mixins.flex( column, space-between, center );
+    >div{
+      @include mixins.flex( row, space-between, center );
+      font-size: variables.$xlFont;
+      text-transform: capitalize;
+      width: 100%;
+      p{
+        margin: 0;
+      }
+      span{
+        font-size: variables.$mediumFont;
+      }
+    }
+  }
+  .nftCard__image{
+    width: 20rem;
+    position: absolute;
+  }
+  .nftCard__description{
+    background-color: variables.$whiteColor;
+    border-radius: variables.$borderRadius;
+    padding: variables.$cardPadding;
+  }
+  .nftCard__type{
+    @include mixins.flex( row, center, center);
+    padding: 3rem 0 1rem;
+    gap: 0.5rem;
+    >*{
+      display: inline-block;
+      border-radius: variables.$borderRadius;
+      padding: calc( variables.$cardPadding / 2 ) variables.$cardPadding ;
+      background-color: variables.$grassColor;
+      margin: 0;
+      color: variables.$whiteColor;
+      font-size: variables.$smallFont;
+    }
+  }
+  .nftCard__title{
+    color: variables.$grassColor;
+    text-align: center;
+    font-size: variables.$mediumFont;
+  }
+  .nftCard__features{
+    @include mixins.grid( 3, 1, 0.5rem );
+    >div{
+      @include mixins.grid( 1, 2, 0.5rem );
+      text-align: center;
+      font-size: variables.$smallFont;
+      &:nth-child(2){
+        border-left: 2px solid variables.$lightGrayColor;
+        border-right: 2px solid variables.$lightGrayColor;
+      }
+      >p{
+        color: variables.$mediumGrayColor;
+      }
+      >div{
+        @include mixins.flex( row, center, center );
+        gap: 0.5rem;
+      }
+    }
+  }
+  .nftCard__baseStats{
+    margin: 0.5rem 0;
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    font-size: variables.$smallFont;
+    gap: 0.5rem;
+    ul{
+      @include mixins.grid( 1, 5, 1fr );
+      align-items: center;
+      &:first-child{
+        border-right: 2px solid variables.$lightGrayColor;
+      }
+    }
+  }
+  .nftCard__bars{
+    flex: 1;
+    li{
+      @include mixins.flex( row, space-between, center);
+      gap: 0.5rem;
+      div{
+        flex: 1;
+        height: 0.5rem;
+        background-color: transparentize(variables.$grassColor, 0.8) ;
+        border-radius: variables.$borderRadius;
+        >div{
+          width: 50%;
+          background-color: variables.$grassColor;
+        }
+      }
+    }
+  }
+}
+
+

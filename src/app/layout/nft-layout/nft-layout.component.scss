@@ -1,0 +1,5 @@
+@use './../../../assets/sass/abstract/mixins';
+
+main{
+  @include mixins.paddingResponsive();
+}

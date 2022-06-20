@@ -1,0 +1,5 @@
+@use '../abstract/variables';
+body{
+  font-family: 'Poppins', sans-serif;
+  color: variables.$darkGrayColor;
+}
