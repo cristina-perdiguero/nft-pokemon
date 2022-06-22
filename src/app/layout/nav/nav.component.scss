@@ -1,0 +1,32 @@
+@use '../../../assets/sass/abstract/mixins';
+@use '../../../assets/sass/abstract/variables';
+
+nav{
+  padding: 0.5rem 1.5rem;
+  border-bottom: 1px solid variables.$mediumGrayColor;
+  @include mixins.flex( row, flex-start, center );
+  position: fixed;
+  width: 100%;
+  background-color: variables.$whiteColor;
+  z-index: 1000;
+  @include mixins.medium{
+    padding: 0.5rem 3rem;
+  }
+  @include mixins.xl{
+    padding: 0.5rem 4.5rem;
+  }
+  @include mixins.xxl{
+    padding: 0.5rem 6rem;
+  }
+  .nav__logo{
+    max-width: 4rem;
+    height: auto;
+  }
+  .nav__title{
+    text-transform: uppercase;
+    span{
+      font-weight: bolder;
+      text-transform: lowercase;
+    }
+  }
+}

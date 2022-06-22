@@ -1,12 +1,12 @@
 @use './variables';
 
 @mixin paddingResponsive(){
-  padding: 1.5rem;
+  padding: 6rem 1.5rem;
   @include medium(){
-    padding: 3rem;
+    padding: 6rem 3rem;
   }
   @include xl(){
-    padding: 4.5rem;
+    padding: 6rem 4.5rem;
   }
   @include xxl(){
     padding: 6rem;
@@ -60,5 +60,65 @@
 @mixin xxl(){
   @media( min-width: variables.$xxl ){
     @content;
+  }
+}
+
+@mixin typeColor(){
+  &.rock{
+    background-color: variables.$rockColor;
+  }
+  &.ghost{
+    background-color: variables.$ghostColor;
+  }
+  &.steel{
+    background-color: variables.$steelColor;
+  }
+  &.water{
+    background-color: variables.$watercolor;
+  }
+  &.grass{
+    background-color: variables.$grassColor;
+  }
+  &.psychic{
+    background-color: variables.$psychicColor;
+  }
+  &.iceColor{
+    background-color: variables.$iceColor;
+  }
+  &.dark{
+    background-color: variables.$darkColor;
+  }
+  &.fairy{
+    background-color: variables.$fairyColor;
+  }
+  &.normal{
+    background-color: variables.$normalColor;
+  }
+  &.fighting{
+    background-color: variables.$fightingColor;
+  }
+  &.flying{
+    background-color: variables.$flyingColor;
+  }
+  &.poison{
+    background-color: variables.$poisonColor;
+  }
+  &.ground{
+    background-color: variables.$groundColor;
+  }
+  &.bug{
+    background-color: variables.$bugColor;
+  }
+  &.fire{
+    background-color: variables.$fireColor;
+  }
+  &.electric{
+    background-color: variables.$electricColor;
+  }
+  &.dragon{
+    background-color: variables.$dragonColor;
+  }
+  &.unknown, &.shadow{
+    background-color: variables.$mediumGrayColor;
   }
 }

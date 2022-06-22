@@ -4,10 +4,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { NftLayoutComponent } from './layout/nft-layout/nft-layout.component';
+import { NavComponent } from './layout/nav/nav.component';
 @NgModule({
   declarations: [
     AppComponent,
-    NftLayoutComponent
+    NftLayoutComponent,
+    NavComponent
   ],
   imports: [
     SharedModule,
