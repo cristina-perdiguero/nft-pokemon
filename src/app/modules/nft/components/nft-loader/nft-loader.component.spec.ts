@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MftLoaderComponent } from './mft-loader.component';
+import { NftLoaderComponent } from './nft-loader.component';
 
-describe('MftLoaderComponent', () => {
-  let component: MftLoaderComponent;
-  let fixture: ComponentFixture<MftLoaderComponent>;
+describe('NftLoaderComponent', () => {
+  let component: NftLoaderComponent;
+  let fixture: ComponentFixture<NftLoaderComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MftLoaderComponent ]
+      declarations: [ NftLoaderComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MftLoaderComponent);
+    fixture = TestBed.createComponent(NftLoaderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

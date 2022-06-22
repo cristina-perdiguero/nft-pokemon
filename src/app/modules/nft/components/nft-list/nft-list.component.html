@@ -1,3 +1,6 @@
 <section class="nftList">
   <app-nft-card *ngFor="let nft of nftList" [nft]="nft"></app-nft-card>
 </section>
+<div class="loaderModal" *ngIf="loader">
+  <app-nft-loader></app-nft-loader>
+</div>

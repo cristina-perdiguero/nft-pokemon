@@ -1,4 +1,5 @@
 @use '../../../../../assets/sass/abstract/mixins';
+@use '../../../../../assets/sass/abstract/variables';
 .nftList{
   @include mixins.flex( column, auto, auto );
   gap: 1rem;
@@ -10,5 +11,19 @@
   }
   @include mixins.xl(){
     @include mixins.grid( 4, 1, 1rem );
+  }
+}
+.loaderModal{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: variables.$whiteColor;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  display: flex;
+
+  >*{
+    margin: auto;
   }
 }
