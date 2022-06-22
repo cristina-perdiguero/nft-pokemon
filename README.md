@@ -1,27 +1,18 @@
 # PokemonNft
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
+Este proyecto se presenta como respuesta al reto ‘Talent Squad’ propuesto por NUWE y Digital Barcelona Talent para la categoría de Frontend. 
 
-## Development server
+Para ver toda la documentación completa del proyecto puedes acceder en el siguiente enlace: [PokemonNft Documentación](https://www.notion.so/PokemonNft-6efd1738e0b34e1b99ae1e3ec51af98f)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Tabla de contenido:
+  * Sobre el proyecto
+    - [Descripción del proyecto](https://www.notion.so/Descripci-n-del-proyecto-e91600fff4a44f01b6a0a59d4713296d)
+  * Desarrollo
+    - [Guía de estilos](https://www.notion.so/Gu-a-de-estilos-9a9fc0c313e7409fa0a5b663aae15692)
+    - [Metodología y desarrollo](https://www.notion.so/Metodolog-a-y-desarrollo-37125f63e636444bad2bd7b461b5ac15)
+    - [Tecnologías](https://www.notion.so/Tecnolog-as-47915f1de69c4891a851a9e4e933d92d)
+      + [Sass](https://www.notion.so/Sass-c4d303bddb604ebba86960460edaa90b)
+      + [Angular](https://www.notion.so/Angular-0bcc24e958c3458b9be168bf325384df)
+  * Repositorio
+    - Repositorio
+    - Demo 
