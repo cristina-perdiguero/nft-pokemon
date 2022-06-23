@@ -3,7 +3,7 @@
 Este proyecto se presenta como respuesta al reto ‘Talent Squad’ propuesto por NUWE y Digital Barcelona Talent para la categoría de Frontend. 
 
 Para ver toda la documentación completa del proyecto puedes acceder en el siguiente enlace: [PokemonNft Documentación](https://www.notion.so/PokemonNft-6efd1738e0b34e1b99ae1e3ec51af98f)
-
+<a href="https://www.notion.so/PokemonNft-6efd1738e0b34e1b99ae1e3ec51af98f" target="_blank" >enlace</a>
 ## Tabla de contenido:
   * Sobre el proyecto
     - [Descripción del proyecto](https://www.notion.so/Descripci-n-del-proyecto-e91600fff4a44f01b6a0a59d4713296d)
