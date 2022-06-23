@@ -122,3 +122,63 @@
     background-color: variables.$mediumGrayColor;
   }
 }
+
+@mixin typeTextColor(){
+  &.rock{
+    color: variables.$rockColor;
+  }
+  &.ghost{
+    color: variables.$ghostColor;
+  }
+  &.steel{
+    color: variables.$steelColor;
+  }
+  &.water{
+    color: variables.$watercolor;
+  }
+  &.grass{
+    color: variables.$grassColor;
+  }
+  &.psychic{
+    color: variables.$psychicColor;
+  }
+  &.iceColor{
+    color: variables.$iceColor;
+  }
+  &.dark{
+    color: variables.$darkColor;
+  }
+  &.fairy{
+    color: variables.$fairyColor;
+  }
+  &.normal{
+    color: variables.$normalColor;
+  }
+  &.fighting{
+    color: variables.$fightingColor;
+  }
+  &.flying{
+    color: variables.$flyingColor;
+  }
+  &.poison{
+    color: variables.$poisonColor;
+  }
+  &.ground{
+    color: variables.$groundColor;
+  }
+  &.bug{
+    color: variables.$bugColor;
+  }
+  &.fire{
+    color: variables.$fireColor;
+  }
+  &.electric{
+    color: variables.$electricColor;
+  }
+  &.dragon{
+    color: variables.$dragonColor;
+  }
+  &.unknown, &.shadow{
+    color: variables.$mediumGrayColor;
+  }
+}

@@ -65,6 +65,7 @@
     color: variables.$grassColor;
     text-align: center;
     font-size: variables.$mediumFont;
+    @include mixins.typeTextColor;
   }
   .nftCard__features{
     @include mixins.grid( 3, 1, 0.5rem );
@@ -96,12 +97,15 @@
       @include mixins.grid( 1, 5, 1fr );
       align-items: center;
       text-transform: capitalize;
+      li{
+        @include mixins.typeTextColor;
+      }
       &:first-child{
         border-right: 2px solid variables.$lightGrayColor;
         li{
           text-transform: uppercase;
-          color: variables.$grassColor;
           font-weight: 700;
+
         }
       }
     }
@@ -114,11 +118,11 @@
       div{
         flex: 1;
         height: 0.5rem;
-        background-color: transparentize(variables.$grassColor, 0.8) ;
+        background-color: transparentize(variables.$mediumGrayColor, 0.8) ;
         border-radius: variables.$borderRadius;
         >div{
           width: 50%;
-          background-color: variables.$grassColor;
+          @include mixins.typeColor;
         }
       }
     }

@@ -10,7 +10,7 @@
     <div class="nftCard__type">
       <p *ngFor="let type of nft.type" class="{{type.type.name}}">{{type.type.name}}</p>
     </div>
-    <h2 class="nftCard__title">About</h2>
+    <h2 class="nftCard__title" [ngClass]="typeClass">About</h2>
     <div class="nftCard__features">
       <div>
         <div>
@@ -35,18 +35,18 @@
         <p>Moves</p>
       </div>
     </div>
-    <h2 class="nftCard__title">Base Stats</h2>
+    <h2 class="nftCard__title" [ngClass]="typeClass">Base Stats</h2>
     <div class="nftCard__baseStats">
       <ul>
-        <li *ngFor="let stat of nft.stats">
+        <li *ngFor="let stat of nft.stats" [ngClass]="typeClass">
           {{ getStatName(stat.stat.name)}}
         </li>
       </ul>
       <ul class="nftCard__bars">
         <li *ngFor="let stat of nft.stats">
           <p>{{stat.base_stat | number: '3.0'}}</p>
-          <div [attr.data-base]="stat.base_stat" class="bars__bar">
-            <div></div>
+          <div [attr.data-base]="stat.base_stat" class="bars__bar" [ngClass]="typeClass">
+            <div [ngClass]="typeClass"></div>
           </div>
         </li>
       </ul>
