@@ -15,4 +15,3 @@ Para ver toda la documentación completa del proyecto puedes acceder en el sigui
       + [Angular](https://www.notion.so/Angular-0bcc24e958c3458b9be168bf325384df)
   * Repositorio
     - [Repositorio](https://github.com/cristina-perdiguero/nft-pokemon)
-    - Demo 
