@@ -16,7 +16,7 @@ export class NftCardComponent implements OnInit {
 
   ngOnInit(): void {
     this.typeApi.typeList$.subscribe(data=>{
-      let number = Math.floor((Math.random() * (data.length - 0 + 1)) + 0);
+      let number = Math.floor((Math.random() * (data.length)));
       this.typeClass = data[number]
     })
   }
